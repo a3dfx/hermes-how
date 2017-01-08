@@ -5,5 +5,5 @@ class MainHandler(webapp2.RequestHandler):
         self.response.out.write(open('index.html').read())
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+
 ], debug=True)
