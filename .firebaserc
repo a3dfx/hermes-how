@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "prod": "hermes-informational",
+    "default": "hermes-informational"
+  }
+}
