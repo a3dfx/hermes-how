@@ -51,6 +51,7 @@ var toggleModal = function(toShow) {
 }
 
 var directToHermes = function() {
+	fbq('track', 'Lead', {})
 	goog_report_conversion('https://hermes.social/trial');
 }
 
