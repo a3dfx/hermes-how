@@ -51,8 +51,13 @@ var toggleModal = function(toShow) {
 }
 
 var directToHermes = function() {
-	fbq('track', 'Lead', {})
-	goog_report_conversion('https://hermes.social/trial');
+	fbq('track', 'Lead')
+	setTimeout(
+		function() {
+			goog_report_conversion('https://hermes.social/trial');
+		},
+		300
+	)
 }
 
 // Header Animations
@@ -110,3 +115,11 @@ goog_report_conversion = function(url) {
 	  conv_handler(opt);
 	}
 }
+
+
+setTimeout(
+	function() {
+		$("#myModal").modal('show');
+	},
+	10000
+)
