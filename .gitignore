@@ -1,0 +1,4 @@
+node_modules
+public/_
+public/state.json
+npm-debug.log.*
